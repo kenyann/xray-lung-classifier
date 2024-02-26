@@ -13,7 +13,7 @@ class ConfigurationManager:
         self.config = read_yaml(config_filepath)
         self.params = read_yaml(params_filepath)
 
-        create_directories([self.config.artifact_root])
+        create_directories([self.config.artifacts_root])
 
     def get_data_ingestion_config(self):
         config = self.config.data_ingestion
@@ -22,7 +22,7 @@ class ConfigurationManager:
 
         data_ingestion_config = DataIngestionConfig(
             root_dir=config.root_dir,
-            source_URL=config.source_url,
+            source_url=config.source_url,
             local_data_file=config.local_data_file,
             unzip_dir=config.unzip_dir
         )
