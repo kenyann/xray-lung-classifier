@@ -5,3 +5,13 @@ data_ingestion:
   source_url: https://drive.google.com/file/d/1wzVrA8WP-bCy5CvgHpKy74ESR1JoyvN4/view?usp=sharing
   local_data_file: artifacts/data_ingestion/data.zip
   unzip_dir: artifacts/data_ingestion
+
+prepare_base_model:
+  root_dir: artifacts/prepare_base_model
+  L_model_path: artifacts/prepare_base_model/L_model.h5 
+  R_model_path: artifacts/prepare_base_model/R_model.h5
+  F_model_path: artifacts/prepare_base_model/F_model.h5
+  updated_L_model_path: artifacts/prepare_base_model/L_model_updated.h5
+  updated_R_model_path: artifacts/prepare_base_model/R_model_updated.h5
+  updated_F_model_path: artifacts/prepare_base_model/F_model_updated.h5
+
